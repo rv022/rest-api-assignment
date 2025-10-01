@@ -46,7 +46,7 @@ app.get('/users/:id', (req, res) => {
 });
 
 //Updating users
-app.put('/user/:id', (req,res) => {
+app.put('/users/:id', (req,res) => {
     const {id} = req.params;
     const {name,email} = req.body;
 
@@ -79,7 +79,7 @@ app.delete('/users/:id', (req,res) => {
 
     users.splite(index,1);
 
-    res.status(204).send();
+    res.sendStatus(204);
     
     
 });
