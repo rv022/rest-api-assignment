@@ -45,7 +45,7 @@ app.get('/users/:id', (req, res) => {
 });
 
 //Updating users
-app.put('/user/:id', (res,res) => {
+app.put('/user/:id', (req,res) => {
     const {id} = req.params;
     const {name,email} = req.body;
 
