@@ -77,7 +77,7 @@ app.delete('/users/:id', (req,res) => {
         return res.status(404).json({message: 'User Not Found.'});
     }
 
-    users.splite(index,1);
+    users.splice(index,1);
 
     res.sendStatus(204);
     
